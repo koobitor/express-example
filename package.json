@@ -1,0 +1,26 @@
+{
+  "name": "express-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/koobitor/express-example.git"
+  },
+  "author": "Sakol Assawasagool <koobitor@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/koobitor/express-example/issues"
+  },
+  "homepage": "https://github.com/koobitor/express-example#readme",
+  "scripts": {
+    "start": "nodemon -w server.js server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "description": "",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}
