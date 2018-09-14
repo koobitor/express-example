@@ -1,9 +1,10 @@
-/* Requires the Docker Pipeline plugin */
-node('docker') {
-    checkout scm
-    stage('Build') {
-        docker.image('node:8.9').inside {
-            sh 'npm --version'
+pipeline {
+    agent { docker { image 'node:8.9' } }
+    stages {
+        stage('build') {
+            steps {
+                sh 'npm --version'
+            }
         }
     }
 }
